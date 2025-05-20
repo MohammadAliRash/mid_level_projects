@@ -1,0 +1,55 @@
+Key Components:
+
+Machine Learning Pipeline:
+
+Implements both SVM and Random Forest classifiers via Optuna hyperparameter optimization
+
+Achieves ~97% accuracy on the Iris dataset
+
+Includes complete preprocessing (imputation + scaling)
+
+Advanced Model Development:
+
+Automated hyperparameter tuning with Optuna (50 trials)
+
+Cross-validated model selection
+
+Comprehensive evaluation (accuracy, F1, precision, confusion matrix)
+
+Feature importance visualization for Random Forest
+
+Production Deployment:
+
+Flask web API with JSON endpoints
+
+Interactive Bootstrap web interface
+
+Model persistence with joblib
+
+Automatic port fallback (5000 → 8080)
+
+Technical Highlights:
+
+🧠 Smart Model Selection: Optuna automatically chooses between SVM/RF based on performance
+
+📊 Full Metrics Tracking: Captures and displays accuracy, F1, and precision scores
+
+🖥️ User-Friendly UI: Real-time prediction form with probability distributions
+
+🔄 Port Resilience: Handles busy ports gracefully
+
+Deployment Ready:
+
+Self-contained HTML templates
+
+Model versioning with timestamps
+
+Proper error handling in API endpoints
+
+Perfect For:
+
+Educational demonstrations of ML workflows
+
+Template for classification projects
+
+Showcasing model deployment best practices
