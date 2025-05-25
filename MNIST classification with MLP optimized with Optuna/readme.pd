@@ -1,0 +1,9 @@
+MNIST Classification Project Summary
+
+This project develops a deep learning model to classify MNIST handwritten digits (0-9) using PyTorch.
+The dataset (70,000 images, 784 features) is normalized and split (80% train, 10% validation, 10% test). 
+A Random Forest baseline achieves ~97% validation accuracy.
+
+An MLP with configurable hidden layers, batch normalization, ReLU, and dropout (0.2) is trained for 30 epochs using SGD (lr=0.001), yielding ~96% test accuracy.
+Optuna optimizes hyperparameters (hidden sizes, learning rate, dropout, batch size) over 50 trials, improving the MLP to ~98% test accuracy with Adam and a learning rate scheduler.
+Visualizations include loss/accuracy curves, model comparison, and Optuna’s optimization plots.
